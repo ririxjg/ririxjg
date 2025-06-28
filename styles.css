@@ -1,0 +1,286 @@
+/* Style 'aam jeneral dial site */
+
+/* kol element f page ghadi ykon fih smooth scroll */
+* {
+    scroll-behavior: smooth;
+}
+
+/* style dial body: font, margin, padding, w background */
+body {
+    font-family: Arial, sans-serif;
+    /* naw3 dyal lkhat*/
+    margin: 0;
+    /*hamish khariji */
+    padding: 0;
+    /*hamish dakhili */
+    color: #dc59a3;
+    /*color*/
+    background-color: #f9f9f9;
+    /*color dyal lkhalfya*/
+}
+
+/* header f rass l page b background image + color + center text */
+header {
+    background: url(iphone\ wallpaper;\ coquette.jpeg);
+    /* image f l backgurround */
+    background-position: center;
+    /*image taji flwast*/
+    background-size: cover;
+    /*l7ajm dl image yakhod tol ol3ard kaml*/
+    background-repeat: no-repeat;
+    /*photo mayt3awdshi*/
+    background-color: #4caf50;
+    /* color li ghadi tkoun lawla ila ma banatch l image */
+    color: white;
+    padding: 1em;
+    text-align: center;
+    /*text yaji flwast*/
+    position: sticky;
+    /* header yb9a las9 f top dppage */
+    top: 0;
+    /*yb9a 0 mn fo9*/
+    display: flex;
+    /*kit7akm f les enfnats*/
+    justify-content: space-evenly;
+    /* space bayn les enfants */
+    align-items: center;
+    /*jib les enfants flwast mn na7ya dyal tol*/
+    z-index: 9999;
+    /* yb9a fou9 */
+}
+
+/* style dial logo (image) */
+.logo {
+    height: 5rem;
+    /*tol*/
+    border-radius: 100%;
+    /* ywalli da2iri */
+    border: 3px solid white;
+    /*itar*/
+}
+
+/* nav bar transparent o blur effect */
+nav {
+    background: rgba(223, 171, 199, 0.3);
+    /* shefafa */
+    backdrop-filter: blur(10px);
+    /* blur l background */
+    -webkit-backdrop-filter: blur(10px);
+    /* safari support */
+    border-radius: 2rem;
+}
+
+/* header, nav w footer: same style  */
+
+nav,
+footer {
+    padding: 1em;
+    text-align: center;
+}
+
+/* nav: flexbox bach ndir les liens f nos lignes */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    /*l espace mabin les enfants*/
+}
+
+/* liens f nav: gradient text w transition */
+
+nav a {
+    background: white;
+    /* khllina background l text beyd, ghadi nst3mlo f clipping */
+    -webkit-background-clip: text;
+    /* dir clipping l background ghi 3la l 7rouf (f Chrome w Safari) */
+    -webkit-text-fill-color: transparent;
+    /* katkhlli l text transparent bach yban ghi background li f l7rouf */
+    text-decoration: none;
+    /* katsupprimih dak l underline li kayji m3a les liens */
+    font-weight: bold;
+    /* katdir l ktaba bold (mghlDa) */
+    transition: color 0.7s;
+    /* katdir transition smoooth f 0.7 seconds ila tbdl l color (ma katsb9ch bzzaf hna) */
+}
+
+/* mlli katdir hover 3la l lien: gradient b colors dyal barca */
+nav a:hover {
+    background: linear-gradient(90deg, #e55a89, #df95b4);
+    /* gradient mn l zrq l fuchsia (style dyal Barca) */
+    -webkit-background-clip: text;
+    /* clipping daba ghadi yb9a mttb9 3la gradient f l7rouf */
+    -webkit-text-fill-color: transparent;
+    /* l text kayb9a transparent bach yban gradient f l7rouf */
+}
+
+/* main content padding */
+main {
+    padding: 2em;
+}
+
+/* kol section tji b margin bottom */
+section {
+    margin-bottom: 3em;
+}
+
+/* h2 center */
+h2 {
+    text-align: center;
+}
+
+/* ------------------- ABOUT ME ------------------- */
+
+/* container dial about-me: white background, center content */
+.about-me {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /*les enfants yajiw fo9 ba3dyatom*/
+    align-items: center;
+    /*oyajiw flwast*/
+    padding: 1em;
+    border-radius: 10px;
+    border: 5px double pink;
+}
+
+/* ------------------- PHOTO GRID ------------------- */
+
+/* grid dial sowar */
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /*photos fash matb9ash misa7a ijiw ta7t ba3dyatom*/
+    justify-content: center;
+}
+
+/* style dial sowar */
+.photo-grid img {
+    margin: 0.5rem;
+    max-width: 25rem;
+    width: 25rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    /*lwa9t li kayakhod l animation*/
+}
+
+/* hover 3la sora: tkber chwia */
+.photo-grid img:hover {
+    transform: scale(1.05);
+    /*kankbro l3onsor*/
+}
+
+/* ------------------- SOCIAL MEDIA ------------------- */
+
+/* container dial social media icons */
+.socialMedia {
+    display: flex;
+    margin-top: 1rem;
+    
+}
+
+/* lien dial social media */
+.socialMedia a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 2rem;
+    margin: 0.5rem 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+/* hover 3la link: tkber */
+.socialMedia a:hover {
+    transform: scale(1.1);
+}
+
+/* couleurs mokhtalfa 3la hsab l platform */
+
+
+
+/*:nth-child(1) kitba9 style 3la l enfant lowl dyal parent lihowa social*/
+
+.socialMedia :nth-child(1) {
+    background-color: green;
+    /* WhatsApp */
+}
+
+
+/*:nth-child(2) kitba9 style 3la l enfant tani dyal parent lihowa social*/
+
+.socialMedia :nth-child(2) {
+    background-color: #a00f5f;
+    /* YouTube */
+}
+
+
+/*:nth-child(3) kitba9 style 3la l enfant talt dyal parent lihowa social*/
+
+/* ------------------- CONTACT FORM ------------------- */
+
+/* form background, padding w radius */
+form {
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+/* label f form */
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+/* input w textarea */
+input,
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* button style */
+button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /*shkl dyal lmouse*/
+    transition: background-color 0.3s;
+}
+
+/* hover 3la button: tbdl color */
+button:hover {
+    background-color: #45a049;
+}
+
+/* ------------------- TABLE ------------------- */
+
+/* table style: full width, background white */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /*7ayd lkhwa mabayn l3anasir dyal tabla*/
+    background-color: white;
+}
+
+/* th w td: padding w border */
+th,
+td {
+    padding: 1em;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+
+/* screen sghira: nav tji vertical */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}

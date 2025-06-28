@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- Hadi kat3ni belli l page radi tsta3ml HTML -->
+
+<html lang="en">
+  <!-- Katbda l page w kat3rf belli l language dyalha hiya l’anglais -->
+
+  <head>
+    <!-- Head dyal l page, fih l informations li kats3dk bach l page tkhddm mzyan -->
+
+    <meta charset="UTF-8" />
+    <!-- Kat3rf l encoding dyal l characters, UTF-8 katdkhl koul 7rouf b kl loughat -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Katkhlli l page responsive f mobile (katban mzyan f tous les appareils) -->
+
+    <title>My Portfolio</title>
+    <!-- L title li ghadi yban f l tab f navigateur -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Katrbt l page b fichier dyal CSS li fih les styles -->
+  </head>
+
+  <body>
+    <!-- Hna katbda l jsm dyal l page, koulchi li kayban f l navigateur -->
+
+    <header>
+      <!-- L header, fih logo w menu dyal navigation -->
+
+      <img src="coquette phone wallpaper.jpeg"  class="logo" />
+  
+      <!-- Tswira dyal logo, l alt hiya l description ila ma bghatch tswira tban -->
+
+      <nav>
+        <!-- Menu dyal navigation f site -->
+
+        <a href="#about">About Me</a>
+        <!-- Lien kayhzzek l section dyal "About Me" -->
+
+        <a href="#photos">Gallery</a>
+        <!-- Lien kayhzzek l "Gallery" (tsawer) -->
+
+        <a href="#schedule">Schedule</a>
+        <!-- Lien kayhzzek l programme dyali (Schedule) -->
+
+        <a href="#contact">Contact</a>
+        <!-- Lien kayhzzek l section dyal contact -->
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hna fih contenu principal dyal site -->
+
+      <section id="about" class="about-me">
+        <!-- Section dyal About Me, m3a id w class bach nkdru nsayb l style -->
+
+        <h2>About Me</h2>
+        <!-- Titre dyal section -->
+
+        <p>
+          <!-- Paragraphe fihi ta3rif b rassk -->
+
+          Hello! I'm <mark>rihab</mark>.
+          <!-- Mark katb9a lih l background, f had l7ala smiti -->
+
+          websites b <b>HTML</b> w <b>CSS</b>.
+          <!-- B katb9a lih bold, 3ndna hna technologia li kan t3lm -->
+        </p>
+
+        <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+          <!-- Div katsm7 l contenu ydakhl f wa7d layout flex w kayt9sm mzyan -->
+
+          <ul>
+            <!-- Liste ma7ssoubach (unordered list) -->
+
+            <li>💡i enjoy designing things.</li>
+            <li>💡i'm interested in coding and technology.</li>
+            <li>💡my goal is to become a Web Developer!</li>
+          </ul>
+
+          <ol>
+            <!-- Liste mrtaba (ordered list) -->
+
+            <li>✨i like traveling.</li>
+            <li>✨i like painting </li>
+            <li>✨i like to go shopping.</li>
+          </ol>
+        </div>
+
+        <div class="socialMedia">
+          <!-- Div li fih les liens dyal social media -->
+
+         
+          <!-- Lien dyal Facebook kay7ll f window jdida -->
+
+          <a
+            href=""
+            target="_blank"
+          >
+            Whatsapp
+          </a>
+          <!-- Lien dyal WhatsApp kayft7 direct chat -->
+
+          <a href="" target="_blank">
+            Instagram
+          </a>
+          <!-- Lien dyal Instagram -->
+        </div>
+      </section>
+
+      <section id="photos">
+        <!-- Section dyal tsawer -->
+
+        <h2 style="text-align: center">My Photo Gallery</h2>
+        <!-- Titre w style bach yji f nos d l page -->
+
+        <div class="photo-grid">
+          <!-- Div katsdfr tsawer f grid -->
+
+          <img src="fond-d-ecran-esthetique-fond-de-fumee-rose.jpg" alt="Photo 1" />
+          <img src="StockCake-Tropical Paradise Sunset_1749823505.jpg" alt="Photo 2" />
+          <img src="StockCake-Elegant pink butterfly_1749822815.jpg" alt="photo 3" />
+          <img src="StockCake-Royal Crown Dreams_1749823291.jpg" alt="Photo 4" />
+          <!-- Kol wa7da men hadchi hiya tswira w l alt kat9der tfid l user ila ma bghatch tban -->
+        </div>
+      </section>
+
+      <section id="schedule">
+        <!-- Section dyal schedule dyali (programme semaine) -->
+
+        <h2>My Weekly Schedule</h2>
+        <!-- Titre dyal l section -->
+
+        <table>
+          <!-- Table bach n'affichi les horaires -->
+
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+            <th>Time</th>
+          </tr>
+          <!-- Header dyal la table -->
+
+          <tr>
+            <td>Monday</td>
+            <td>HTML Practice</td>
+            <td>2:00 PM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>CSS Layout</td>
+            <td>2:00 PM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Project Building</td>
+            <td>2:00 PM</td>
+          </tr>
+          <!-- Kol ligne f table katb9a nhar w activité w wa9t -->
+        </table>
+      </section>
+
+      <section id="contact">
+        <!-- Section dyal contact -->
+
+        <h2>Contact Me</h2>
+        <!-- Titre dyal l section -->
+
+        <form>
+          <!-- Formulaire bach l users ykhdmo contact -->
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <!-- Input bach ydkhl l user smiyto -->
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <!-- Input bach ydkhl l user email dyalo -->
+           
+
+          <label for="message">Message:</label>
+          <textarea id="message" rows="5" required></textarea>
+          <!-- Textarea bach yktb message -->
+
+          <button type="submit">Send</button>
+          <!-- Button bach ysend l formulaire -->
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer dyal l page -->
+
+      <p>&copy; 2025 [RIHAB's] Portfolio</p>
+      <!-- Copyright message -->
+    </footer>
+  </body>
+</html>
+<!-- Fin dyal l HTML document -->
